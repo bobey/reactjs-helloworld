@@ -4,7 +4,7 @@ module.exports = function(grunt) {
             options: {
                 debug: true,
                 extensions: ['.jsx'],
-                transform: ['reactify']
+                external: ['react']
             },
             hello: {
                 src: 'src/jsx/app.jsx',

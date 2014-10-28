@@ -1,6 +1,15 @@
 {
   "description": "Basic HelloWorld with React, grunt and browserify",
   "repository": "https://",
+  "browserify": {
+    "transform": [
+      "reactify",
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "react": "global:React"
+  },
   "devDependencies": {
     "react": "^0.11.2",
     "grunt": "^0.4.5",
